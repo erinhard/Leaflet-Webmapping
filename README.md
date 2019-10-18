@@ -32,6 +32,22 @@ var Grayscale = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
 	id: 'mapbox.light'
 }).addTo(map);
 
+# Add geojson object and add color: 
+
+var county = {
+"type": "FeatureCollection",
+"name": "ny_county",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::4269" } },
+"features": [=]
+};
+
+var countyStyle = {
+	"color": "#de2d26",
+	"weight": 3,
+	"opacity": 1,
+	"fillOpacity": 0
+};
+
 # Overlaying with a popup and info on hover for my geojson object:
 
 var baseMaps = {
