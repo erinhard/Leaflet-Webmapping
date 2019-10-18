@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+NY State County Webmap
 
 You can use the [editor on GitHub](https://github.com/erinhard/pleasant-programming-partner/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
