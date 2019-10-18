@@ -15,7 +15,7 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
-**Get basemaps [here](https://leaflet-extras.github.io/leaflet-providers/preview/)**
+Get basemaps [here](https://leaflet-extras.github.io/leaflet-providers/preview/)
 
 # Adding a topographic basemap and a grayscale basemap from Mapbox: 
 
