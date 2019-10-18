@@ -15,6 +15,21 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
+# Adding a topographic basemap and a grayscale basemap from Mapbox: 
+
+var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+	maxZoom: 17,
+	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+}).addTo(map);
+
+var Grayscale = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+	maxZoom: 18,
+	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+		'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+	id: 'mapbox.light'
+}).addTo(map);
+
 # Overlaying 2 basemaps and a geojson object for my map:
 
 var baseMaps = {
@@ -24,11 +39,11 @@ var baseMaps = {
 
 var overlayMaps = {
 "Counties": L.geoJSON(county, {
-					style: countyStyle,
-					onEachFeature: function(feature, layer) {
-						layer.bindPopup('<h1>'+feature.properties.NAMELSAD+'</h1>'),
-						layer.bindTooltip(feature.properties.NAMELSAD)
-					}
+	style: countyStyle,
+	onEachFeature: function(feature, layer) {
+		layer.bindPopup('<h1>'+feature.properties.NAMELSAD+'</h1>'),
+		layer.bindTooltip(feature.properties.NAMELSAD)
+	}
 })
 };
 
