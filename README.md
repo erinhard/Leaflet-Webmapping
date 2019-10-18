@@ -15,7 +15,7 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
-# Adding a topographic basemap and a grayscale basemap from Mapbox: 
+**Adding a topographic basemap and a grayscale basemap from Mapbox:** 
 
 var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 17,
@@ -30,7 +30,7 @@ var Grayscale = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
 	id: 'mapbox.light'
 }).addTo(map);
 
-# Overlaying 2 basemaps and a geojson object for my map:
+**Overlaying 2 basemaps and a geojson object for my map:**
 
 var baseMaps = {
 	"Topographic": OpenTopoMap,
