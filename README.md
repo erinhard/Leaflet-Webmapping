@@ -15,6 +15,25 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
+# Overlaying 2 basemaps and a geojson object for my map:
+
+var baseMaps = {
+	"Topographic": OpenTopoMap,
+	"Grayscale": Grayscale
+};
+
+var overlayMaps = {
+"Counties": L.geoJSON(county, {
+					style: countyStyle,
+					onEachFeature: function(feature, layer) {
+						layer.bindPopup('<h1>'+feature.properties.NAMELSAD+'</h1>'),
+						layer.bindTooltip(feature.properties.NAMELSAD)
+					}
+})
+};
+
+L.control.layers(baseMaps, overlayMaps).addTo(map);
+
 - Bulleted
 - List
 
