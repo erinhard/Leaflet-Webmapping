@@ -40,7 +40,7 @@ HTML code:
 
 	var map = L.map('map').setView([43.015480, -76.088416], 7);
 
-	# Adding a topographic basemap and a grayscale basemap from Mapbox: 
+	//Adding a topographic basemap and a grayscale basemap from Mapbox:// 
 
 	var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 		maxZoom: 17,
@@ -55,7 +55,7 @@ HTML code:
 		id: 'mapbox.light'
 	}).addTo(map);
 
-	# Add geojson object and add color: 
+	//Add geojson object and add color:// 
 
 	var county = {
 	"type": "FeatureCollection",
@@ -71,7 +71,7 @@ HTML code:
 		"fillOpacity": 0
 	};
 
-	# Overlaying with a popup and info on hover for my geojson object:
+	//Overlaying with a popup and info on hover for my geojson object://
 
 	var baseMaps = {
 		"Topographic": OpenTopoMap,
