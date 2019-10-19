@@ -1,6 +1,6 @@
 HTML code:
 
-# New York County Map
+# View my map [here:](https://erinhard.github.io/NY-State-County-Map/)
 
 <!DOCTYPE html>
 <html>
