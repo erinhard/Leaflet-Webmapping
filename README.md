@@ -1,12 +1,12 @@
-How To:
+HTML code:
 
-# Title
+# New York County Map
 
 <!DOCTYPE html>
 <html>
 <head>
 
-	<title>NY State Counties</title>
+	<title>NY Counties</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,8 +39,6 @@ How To:
 	<script type="text/javascript">
 
 	var map = L.map('map').setView([43.015480, -76.088416], 7);
-
-	**Get basemaps** [here](https://leaflet-extras.github.io/leaflet-providers/preview/)
 
 	# Adding a topographic basemap and a grayscale basemap from Mapbox: 
 
@@ -91,6 +89,8 @@ How To:
 	};
 
 	L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+**Get basemaps** [here](https://leaflet-extras.github.io/leaflet-providers/preview/)
 
 Markdown features:
 - Bulleted
