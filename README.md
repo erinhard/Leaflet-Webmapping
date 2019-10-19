@@ -1,6 +1,6 @@
-NY State County Webmap How To:
+How To:
 
-# Starting out:
+# Title
 
 <!DOCTYPE html>
 <html>
