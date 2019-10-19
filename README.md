@@ -1,6 +1,6 @@
-NY County Webmap HTML Code
+View map [here](https://erinhard.github.io/Leaflet-Webmapping/)
 
-# View map [here](https://erinhard.github.io/Leaflet-Webmapping/)
+# HTML Code
 
 <!DOCTYPE html>
 <html>
