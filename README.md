@@ -1,5 +1,5 @@
 View my map [here](https://erinhard.github.io/Leaflet-Webmapping/)
-
+<script>
 library(rgdal)
 library(leaflet)
 
@@ -28,3 +28,4 @@ leaflet() %>%
   addLayersControl(baseGroups = c("Street", "Satellite"))
 
 **Get basemaps** [here](https://leaflet-extras.github.io/leaflet-providers/preview/)
+</script>
